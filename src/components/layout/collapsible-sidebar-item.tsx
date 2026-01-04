@@ -45,10 +45,10 @@ export function CollapsibleSidebarItem({ item }: CollapsibleSidebarItemProps) {
             {item.subItems.map((subItem) => (
               <SidebarMenuSubItem key={subItem.id}>
                 <SidebarMenuSubButton className="hover:bg-gray-50 hover:text-sidebar-accent-foreground dark:hover:bg-white/20 dark:hover:bg-white/20"
-                  asChild={!!subItem.href}
-                  isActive={location.pathname === subItem.href}
+                  asChild={subItem.label === 'Orders' && !!subItem.href}
+                  isActive={location.pathname === subItem.href && location.pathname !== '/'}
                 >
-                  {subItem.href ? (
+                  {subItem.label === 'Orders' && subItem.href ? (
                     <Link to={subItem.href} className="font-light">{subItem.label}</Link>
                   ) : (
                     <span className="font-light">{subItem.label}</span>

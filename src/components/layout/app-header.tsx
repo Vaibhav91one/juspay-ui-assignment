@@ -63,13 +63,13 @@ export function AppHeader({ onRightSidebarToggle }: AppHeaderProps) {
     const path = location.pathname
     if (path === '/') {
       return [
-        { label: 'Dashboards', href: '/dashboards' },
+        { label: 'Dashboards', href: '/' },
         { label: 'Default', current: true },
       ]
     }
     // Add more routes as needed
     return [
-      { label: 'Dashboards', href: '/dashboards' },
+      { label: 'Dashboards', href: '/' },
       { label: 'Default', current: true },
     ]
   }
