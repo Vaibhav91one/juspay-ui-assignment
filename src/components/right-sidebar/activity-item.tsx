@@ -12,7 +12,7 @@ export function ActivityItemComponent({ activity, isLast = false }: ActivityItem
       {/* Vertical line - positioned at the center of the avatar, extending down through the gap */}
       {!isLast && (
         <div 
-          className="absolute left-3 w-px bg-gray-200" 
+          className="absolute left-3 w-px bg-gray-200 dark:bg-white/10" 
           style={{ top: '1.9rem', bottom: '-0.5rem' }}
         />
       )}
