@@ -110,15 +110,54 @@ npm run test
 
 ## Design Decisions & Challenges
 
-* **Component Distribution:** I have distributed pages and sections into small components for better readability and following the Single Responsibility Principle. For example, this avatar icon is being used in more than 3 places. So, I have created a single component and am using it everywhere. This will help when I need to change the avatar icon in some way.
-* **SVG Components:** I have created separate SVG components for all SVGs. I have used a tool for optimizing and formatting the SVGs and then creating a React component from it.
-* **State Management:** I have used Redux Toolkit for global theme state management. The use case is very small, but it basically subscribes to theme changes, applies/removes the dark class on the HTML tag, and prevents flash of wrong theme on load.
-* **Performance:** I have also implemented code splitting and vendor chunk optimization as chunks were getting a little bit big. Route-based code splitting using React.lazy() and Suspense ensures that pages are loaded on-demand, reducing the initial bundle size.
+* **Component Distribution:**
+  - Distributed pages and sections into small components for better readability
+  - Followed the Single Responsibility Principle
+  - Created reusable components (e.g., avatar icon used in 3+ places)
+  - Centralized component changes for easier maintenance
+
+* **SVG Components:**
+  - Created separate SVG components for all SVGs
+  - Used tools for optimizing and formatting SVGs
+  - Converted optimized SVGs into React components
+
+* **State Management:**
+  - Used Redux Toolkit for global theme state management
+  - Subscribes to theme changes
+  - Applies/removes dark class on HTML tag
+  - Prevents flash of wrong theme on load
+
+* **Performance:**
+  - Implemented code splitting and vendor chunk optimization
+  - Route-based code splitting using React.lazy() and Suspense
+  - Pages loaded on-demand, reducing initial bundle size
 
 ### Challenges Faced
 
-- **Challenge 1:** The first challenge I faced was getting the layout right. So, from my perspective, the layout is divided into 4 parts: the left sidebar, the right sidebar, the app header, and lastly the main content. So, setting up those 4 parts was the first step in completing this assignment. And in order to be precise with the text, font, coloring, and spacing, I have used the same specs as the Figma design.
-- **Challenge 2:** The second challenge I faced was the home page analytics. The UI library (Shadcn) which I am using has some really good basic analytic components. So, after importing the basic ones and adjusting them to the design was a little time-taking. In some places like in the revenue by location components, first I straight used the SVG from the Figma design, but that was affecting the performance of the web page. So, I created a separate SVG and added dots absolutely on top of it. Same for the Total Sales pie chart. That pie chart was not present in the UI library I am using, so I had to create that from scratch.
+- **Challenge 1: Layout Setup**
+  - Getting the layout structure right was the first challenge
+  - Layout divided into 4 main parts:
+    - Left sidebar
+    - Right sidebar
+    - App header
+    - Main content
+  - Setting up these 4 parts was crucial for the assignment
+  - Used exact Figma design specs for:
+    - Text styling
+    - Font specifications
+    - Color schemes
+    - Spacing and layout
+
+- **Challenge 2: Home Page Analytics**
+  - Working with Shadcn UI library's basic analytic components
+  - Importing and adjusting components to match design was time-consuming
+  - Revenue by location component:
+    - Initially used SVG directly from Figma design
+    - Performance issues arose
+    - Solution: Created separate SVG and added dots absolutely positioned on top
+  - Total Sales pie chart:
+    - Not available in the UI library
+    - Created custom pie chart component from scratch
 
 Other than these I enjoyed working on the project.
 
