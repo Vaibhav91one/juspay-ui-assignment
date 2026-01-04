@@ -59,7 +59,6 @@ npm run preview
 
 ## Project Structure
 
-
 ```
 src/
 ├── components/          # Reusable UI components
@@ -115,9 +114,11 @@ npm run test
 - **Challenge 1:** The first challenge I faced was getting the layout right. So, from my perspective, the layout is divided into 4 parts: the left sidebar, the right sidebar, the app header, and lastly the main content. So, setting up those 4 parts was the first step in completing this assignment. And in order to be precise with the text, font, coloring, and spacing, I have used the same specs as the Figma design.
 - **Challenge 2:** The second challenge I faced was the home page analytics. The UI library (Shadcn) which I am using has some really good basic analytic components. So, after importing the basic ones and adjusting them to the design was a little time-taking. In some places like in the revenue by location components, first I straight used the SVG from the Figma design, but that was affecting the performance of the web page. So, I created a separate SVG and added dots absolutely on top of it. Same for the Total Sales pie chart. That pie chart was not present in the UI library I am using, so I had to create that from scratch.
 
-Other than these I enjoyed working on the project. 
+Other than these I enjoyed working on the project.
 
 ### Live Demo
+
+[Walkthrough](https://drive.google.com/file/d/1wIQ0cuiyoBoK4kTGuZsWU3fN4rTGY-Tf/view?usp=sharing)
 
 [View Live Demo](https://juspay-ui-assignment-nine.vercel.app/)
 
@@ -137,4 +138,3 @@ Other than these I enjoyed working on the project.
 - Screen reader compatibility
 - Focus management
 - Semantic HTML structure
-
