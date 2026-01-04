@@ -1,5 +1,11 @@
 # Juspay UI Assignment - SaaS Dashboard
 
+### Live Demo
+
+[Walkthrough](https://drive.google.com/file/d/1wIQ0cuiyoBoK4kTGuZsWU3fN4rTGY-Tf/view?usp=sharing)
+
+[View Live Demo](https://juspay-ui-assignment-nine.vercel.app/)
+
 ## Features
 
 - Dark/Light Theme Toggle
@@ -116,11 +122,6 @@ npm run test
 
 Other than these I enjoyed working on the project.
 
-### Live Demo
-
-[Walkthrough](https://drive.google.com/file/d/1wIQ0cuiyoBoK4kTGuZsWU3fN4rTGY-Tf/view?usp=sharing)
-
-[View Live Demo](https://juspay-ui-assignment-nine.vercel.app/)
 
 ## Performance Optimizations
 
